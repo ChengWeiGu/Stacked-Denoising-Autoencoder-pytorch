@@ -5,19 +5,12 @@ The SDCAE model is implemented for PHM data. The scripst are public and based on
 1. The SDCAE model and script are revised from the following previous wrok:  
 https://github.com/ShayanPersonal/stacked-autoencoder-pytorch  
 
-2. One can install some related packages by referring to requirements.txt  
--> Python Version: 3.6  
+2. Please run "pip install -r requirements.txt" for Python=3.6  
 
 ## Run the model:  
-
-1. command: python train_SDCAE_PHM.py -t  
-    => For PHM data, there are three classes: Normal, NG1 and NG2.  
-    => For MNIST data, by the cmd please: python train_SDCAE_MNIST.py -t  
-
-
-2. command: python train_SDCAE_PHM.py -v -w .\dir_name\Model_Weight_Name.ph  
-    => One can evaluate the model by the cmd, where weights of model should exist.  
-
+1. Please run "python run_sdcae.py"   
+2. Before training, prepare your dataset and both list_train.csv and list_test.csv  
+3. The datasets can be refered in branch "main"-> folder "wav"  
 
 ## DataSet Description:   
 1. There are three classes of data: Normal, NG1 and NG2.  
